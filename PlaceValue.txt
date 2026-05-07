@@ -1,0 +1,24 @@
+import java.util.*;
+public class placevalue{
+ public static void main(String[] args){
+  Scanner scan=new Scanner(System.in);
+  int []numbers=new int[4];
+  System.out.println("Enter the four digit number");
+  for(int i=0;i<numbers.length;i++){
+      numbers[i]=scan.nextInt();}
+  System.out.println("Enter the number to find it's place value");
+  int a=scan.nextInt();
+ for(int i=0;i<numbers.length;i++)
+  {
+    if(numbers[3]==a)
+      System.out.println("Once place\nPlace value :" + a +"\nFace value :"  + a);
+    else if(numbers[2]==a)
+      System.out.println("Tens place\nPlace value :" + a*10 +"\nFace value :" + a);
+    else if(numbers[1]==a)
+      System.out.println("Hundreds place\nPlace value :" + a*100 +"\nFace value :" + a);
+    else
+      System.out.println("Thousands place\nPlace value :" + a*100 +"\nFace value :" + a);
+    break;
+  }
+ }
+}
